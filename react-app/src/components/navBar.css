@@ -1,0 +1,21 @@
+.nav-container {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column; 
+    border: 1px solid rebeccapurple;
+    height: 70px;
+}
+
+.unordered-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 70px;
+    border: 1px solid red;
+}
+
+.list-item {
+    border: 1px solid green;
+}

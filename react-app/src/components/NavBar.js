@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom';
 import LogoutButton from './auth/LogoutButton';
 import './navBar.css';
 import { BsSearch } from "react-icons/bs";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { BiCaretDown } from "react-icons/bi";
 // const mmazonLogo = require('../../public/mmazon-logo.png')
 
 const NavBar = () => {
@@ -18,14 +21,25 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li className='list-item' id='location-nav'>
-              <NavLink to='/login' exact={true} activeClassName='active'>
-
+              <NavLink to='/login' exact={true} activeClassName='location'>
+                <span className='location-span'>
+                  <div>
+                    <HiOutlineLocationMarker id="location-icon" />
+                  </div>
+                  <div className='location-message'>
+                    <p className='hello-tag'>Hello</p>
+                    <p className='select-message'>Select your address</p>
+                  </div>
+                </span>
               </NavLink>
             </li>
           </div>
           <li className='list-item' id='search-nav'>
             <button id='search-depts'>
               All
+              <div id="down-caret">
+              <BiCaretDown />
+              </div>
             </button>
             <input
               className='search-input'
@@ -56,6 +70,7 @@ const NavBar = () => {
         <ul className='lower-nav'>
           <li className='lower-nav-link'>
             <NavLink to=''>
+              <GiHamburgerMenu/>
               All
             </NavLink>
           </li>

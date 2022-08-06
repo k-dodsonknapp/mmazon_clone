@@ -1,22 +1,36 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { NavLink, Redirect, useHistory } from 'react-router-dom';
 import { login } from '../../store/session';
+import "./auth.css"
 
 const LoginForm = () => {
-  const [errors, setErrors] = useState([]);
+  const [emailErrors, setEmailErrors] = useState([]);
+  const [passwordError, setPasswordError] = useState([]);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const user = useSelector(state => state.session.user);
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const onLogin = async (e) => {
     e.preventDefault();
     const data = await dispatch(login(email, password));
     if (data) {
-      setErrors(data);
+      console.log(data)
+      if (data[0] === 'email : This field is required.') {
+        setEmailErrors(["Enter your email"]);
+      } 
+      if (data[1] === 'password : This field is required.'){
+        setPasswordError(["Enter your password"])
+      }
     }
   };
+
+  const createAccount = async (e) => {
+    e.preventDefault();
+    history.push("/sign-up")
+  }
 
   const updateEmail = (e) => {
     setEmail(e.target.value);
@@ -31,34 +45,66 @@ const LoginForm = () => {
   }
 
   return (
-    <form onSubmit={onLogin}>
-      <div>
-        {errors.map((error, ind) => (
-          <div key={ind}>{error}</div>
-        ))}
+    <div className='login-form-container'>
+      <div className='logo-container'>
+        <NavLink to={"/"}>
+        <img className='mmazon-logo-login' src='https://raw.githubusercontent.com/k-dodsonknapp/mmazon_clone/main/mmazon-logo-white-background.png'></img>
+        </NavLink>
       </div>
-      <div>
-        <label htmlFor='email'>Email</label>
-        <input
-          name='email'
-          type='text'
-          placeholder='Email'
-          value={email}
-          onChange={updateEmail}
-        />
+      <div className='form-container'>
+        <h1>Sign-In</h1>
+        <form className='login-form' onSubmit={onLogin}>
+          <div className='login-input'>
+            <label htmlFor='email'>Email</label>
+            <input
+              name='email'
+              type='text'
+              // placeholder='Email'
+              value={email}
+              onChange={updateEmail}
+            />
+            <div>
+              {emailErrors.map((error, ind) => (
+                <div key={ind} className="login-errors">{error}</div>
+              ))}
+            </div >
+          </div>
+          <div className='login-input'>
+            <label htmlFor='password'>Password</label>
+            <input
+              name='password'
+              type='password'
+              // placeholder='Password'
+              value={password}
+              onChange={updatePassword}
+            />
+            <div>
+              {passwordError.map((error, ind) => (
+                <div key={ind} className="login-errors">{error}</div>
+              ))}
+            </div >
+            <div className='login-btn-div'>          
+              <button className='login-btn' type='submit'>Continue</button>
+            </div>
+          </div>
+        </form>
+        <div className='condition-div'>
+          <h4> By continuing, you agree to Mmazon's
+            <span> Conditions of Use </span>
+            and
+            <span> Privacy Notice.</span>
+          </h4>
+        </div>
       </div>
-      <div>
-        <label htmlFor='password'>Password</label>
-        <input
-          name='password'
-          type='password'
-          placeholder='Password'
-          value={password}
-          onChange={updatePassword}
-        />
-        <button type='submit'>Login</button>
+      <div className='sign-up-div'>
+        <div className='memo-div'>
+          <div className='memo-line'></div>
+          <h4> New to Mmazon? </h4>
+          <div className='memo-line'></div>
+        </div>
+        <button onClick={createAccount}>Create your Mmazon account</button>
       </div>
-    </form>
+    </div>
   );
 };
 

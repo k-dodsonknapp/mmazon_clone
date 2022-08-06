@@ -1,0 +1,276 @@
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    /* background-color: blue; */
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.mmazon-logo-login {
+    height: 40px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 320px;
+    height: 300px;
+    /* background-color: brown; */
+    border-radius: 3px;
+    border: 1.5px solid #ddd;
+    padding: 20px;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.login-form h1{
+    font-weight: 548;
+    padding: 10px 0px;
+    color: #111;
+    font-size: 27px;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-input label{
+    display: flex;
+    font-weight: 700;
+    padding: 3px 0px;
+    font-size: 13px;
+    color: #111;
+}
+
+.login-input > input{
+    display: flex;
+    flex-direction: column;
+    height: 26px;
+    padding: 2px 5px;
+    background-color: white !important;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.login-input input:focus{
+    outline: none;
+    border: #9c7e31 solid 1px;
+    box-shadow: 0px 0px 6px 2px #f09c4d;
+}
+
+.login-btn-div {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.login-btn-div button{
+    width: 100%;
+    height: 33px;
+    padding: 6px;
+    border: 1px solid #9c7e31;
+    background: linear-gradient(#faecc8, #f0c24d) !important;
+    border-radius: 3px;
+}
+
+.login-btn-div button:hover {
+    cursor: pointer;
+    background: #f0c24d !important;
+}
+
+.condition-div h4 {
+    font-weight: 200;
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+.condition-div span {
+    color: #0066c0;
+}
+
+.sign-up-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 33px;
+}
+
+.sign-up-div h4 {
+    display: flex;
+    white-space: nowrap;
+    font-weight: 200;
+    font-size: 12px;
+    width: 200px;
+    padding: 0px 5px;
+    color: #908583;
+}
+
+.memo-div {
+    display: flex;
+    flex-direction: row;
+    width: 360px;
+}
+
+.memo-line {
+    width: 98%;
+    height: 1px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-top: 5px;
+}
+
+.sign-up-div button {
+    margin-top: 10px;
+    width: 100%;    
+    height: 30px;
+    color: #111111c7;
+    border: 1px solid #a2a6ac;
+    background: linear-gradient(#fcfcfd, #e7e9ec);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sign-up-div button:hover {
+    /* margin-top: 10px;
+    width: 100%;    
+    height: 30px;
+    color: #111111c7;
+    border: 1px solid #a2a6ac; */
+    background: rgba(182, 182, 182, 0.486);
+    cursor: pointer;
+}
+
+.login-errors {
+    color: #c40000;
+    font-size: 12px;
+}
+
+/*********************V-Sign-Up-Form-V****************************/
+
+.sign-up-form-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup-form {
+    width: 100%;
+}
+
+.signup-form-container h1{
+    font-weight: 100;
+    padding: 10px 0px;
+    color: #111;
+    font-size: 27px;
+}
+
+.signup-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-input label{
+    display: flex;
+    font-weight: 700;
+    padding: 3px 0px;
+    font-size: 13px;
+    color: #111;
+}
+
+.signup-input > input{
+    display: flex;
+    flex-direction: column;
+    height: 26px;
+    padding: 2px 5px;
+    background-color: white !important;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.signup-input input:focus{
+    outline: none;
+    border: #9c7e31 solid 1px;
+    box-shadow: 0px 0px 6px 2px #f09c4d;
+}
+
+.signup-form-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 320px;
+    height: 475px;
+    /* background-color: brown; */
+    border-radius: 3px;
+    border: 1.5px solid #ddd;
+    padding: 20px;
+}
+
+.s-condition-div h4 {
+    font-weight: 200;
+    font-size: 13px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.s-condition-div span {
+    color: #0066c0;
+}
+
+.sign-in-redirect-div{
+    height: 1px;
+    /* margin: 50px 0; */
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    border: 0;
+}
+
+.sign-in-redirect-div:before {
+    display: block;
+    content: '';
+    height: 10px;
+    background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -moz-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -o-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+.sign-in-redirect-div h5 {
+    font-weight: 200;
+    font-size: 13px;
+    margin-top: 21px;
+}
+
+.sign-in-redirect-div h5 a {
+    text-decoration: none;
+    color: #0066c0;
+}
+
+.sign-in-redirect-div h5 a:hover {
+    text-decoration: underline;
+    color: #0066c0;
+}

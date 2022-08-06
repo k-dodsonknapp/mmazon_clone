@@ -1,21 +1,196 @@
 .nav-container {
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    flex-direction: column; 
-    border: 1px solid rebeccapurple;
-    height: 70px;
-}
-
-.unordered-list {
-    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; 
+    /* border: 1px solid rebeccapurple; */
+    height: 100px;
+}
+
+.upper-nav {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
     flex-direction: row;
-    height: 70px;
-    border: 1px solid red;
+    height: 60px;
+    background-color: #131921;
+    min-width: 100%;
+    /* border: 1px solid red; */
+}
+
+.upper-nav-left {
+    display: flex;
+    margin-left: 15px;
+}
+
+.mmazon-logo {
+    /* margin-right: 5px; */
+    height: 2.8rem;
+    width: 8rem;
+}
+
+#logo-nav {
+    display: flex;
+    height: 44px;
+    width: 128px;
+    /* border: 1px solid #ffffff; */
+    /* margin-left: 10px; */
+    margin-right: 5px;
+    padding: 1px;
+}
+
+#logo-nav:hover {
+    border: 1px solid #ffffff;
+    padding: 0px;
+    border-radius: 2px;
+    margin-right: 5px;
+
+}
+
+#location-nav {
+    display: flex;
+    height: 44.797px;
+    width: 9rem;
+    padding: 1px;
+    margin-right: 15px;
+}
+
+#location-nav:hover {
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    padding: 0px;
+    margin-right: 15px;
+
+}
+
+#search-depts {
+    width: 50px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #cdcdcd;
+    background-color: #f3f3f3;
+}
+
+#search-nav {
+    display: flex;
+    justify-content: flex-start;
+    width: 1160px;
+}
+
+.search-input {
+    height: 40px;
+    width: 1100px;
+    border: none;
+    border-left: none;
+    border-right: none;
+}
+
+#search-icon-btn {
+    width: 50px;
+    border-radius: 0px 3px 3px 0px;
+    border: 1px solid #febd69;
+    background-color: #febd69;
+}
+
+#search-icon {
+    height: 20px;
+    width: 30px;
+}
+
+.upper-nav-right {
+    display: flex;
+}
+
+
+
+
+/*******************V-Lower-Nav-V***************************/
+
+.lower-nav-link {
+    list-style: none;
+    padding: 5px;
+}
+
+.lower-nav-link:hover {
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    padding: 4px;
+}
+
+.lower-nav-link a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffffe0 !important;
+    padding: 6px;
+}
+
+.lower-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 40px;
+    background-color: #232f3e;
+    min-width: 100%;
+    /* border: 1px solid red; */
 }
 
 .list-item {
-    border: 1px solid green;
+    text-decoration: none;
+    list-style: none;
+    /* border: 1px solid green; */
+}
+
+#upper-right-nav-sign-in {
+    display: flex;
+    height: 44px;
+    width: 128px;
+    border: 1px solid #ffffff;
+    /* margin-left: 10px; */
+    margin-right: 5px;
+    margin-left: 20px;
+    padding: 1px;
+}
+
+#upper-right-nav-sign-in:hover {
+    border: 1px solid #ffffff;
+    padding: 0px;
+    border-radius: 2px;
+    margin-right: 5px;
+
+}
+
+#upper-right-nav-orders {
+    display: flex;
+    height: 44px;
+    width: 128px;
+    border: 1px solid #ffffff;
+    /* margin-left: 10px; */
+    margin-right: 5px;
+    padding: 1px;
+}
+
+#upper-right-nav-orders:hover {
+    border: 1px solid #ffffff;
+    padding: 0px;
+    border-radius: 2px;
+    margin-right: 5px;
+
+}
+
+#upper-right-nav-cart {
+    display: flex;
+    height: 44px;
+    width: 128px;
+    /* border: 1px solid #ffffff; */
+    /* margin-left: 10px; */
+    margin-right: 5px;
+    padding: 1px;
+}
+
+#upper-right-nav-cart:hover {
+    border: 1px solid #ffffff;
+    padding: 0px;
+    border-radius: 2px;
+    margin-right: 5px;
+
 }

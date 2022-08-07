@@ -5,8 +5,9 @@ import LogoutButton from './auth/LogoutButton';
 import './navBar.css';
 import { BsSearch } from "react-icons/bs";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { BsList } from "react-icons/bs";
 import { BiCaretDown } from "react-icons/bi";
+import { BiCartAlt } from "react-icons/bi";
 // const mmazonLogo = require('../../public/mmazon-logo.png')
 
 const NavBar = () => {
@@ -38,7 +39,7 @@ const NavBar = () => {
             <button id='search-depts'>
               All
               <div id="down-caret">
-              <BiCaretDown />
+                <BiCaretDown />
               </div>
             </button>
             <input
@@ -55,23 +56,78 @@ const NavBar = () => {
           </li>
           <div className='upper-nav-right'>
             <li className='list-item' id='upper-right-nav-sign-in'>
-              <NavLink to='/users' exact={true} activeClassName='active'>
-                Users
+              <NavLink to='' exact={true} activeClassName='active'>
+                <span className='signin-span'>
+
+                  <div className='signin-message'>
+                    <div>
+                      <p className='signin-tag'>Hello, Sign in</p>
+                      {/* <p className='signin-tag'>Sign in</p> */}
+                    </div>
+                    <div>
+                      <p className='accounts-message'>
+                        Account & Lists
+                        <div id="signin-down-caret">
+                          <BiCaretDown />
+                        </div>
+                      </p>
+                    </div>
+                  </div>
+                </span>
               </NavLink>
             </li>
             <li className='list-item' id='upper-right-nav-orders'>
-              {/* <LogoutButton /> */}
+              <NavLink to='' exact={true} activeClassName='active'>
+                <span className='orders-span'>
+                  <div className='orders-message'>
+                    <div>
+                      <p className='orders-tag'>Returns</p>
+                      {/* <p className='signin-tag'>Sign in</p> */}
+                    </div>
+                    <div>
+                      <p className='orders-message'>
+                        & Orders
+                      </p>
+                    </div>
+                  </div>
+                </span>
+              </NavLink>
             </li>
             <li className='list-item' id='upper-right-nav-cart'>
-              {/* <LogoutButton /> */}
+              <NavLink id='cart-navlink' to='' exact={true} activeClassName='active'>
+                {/* <span className='orders-span'> */}
+                  {/* <div className='orders-message'> */}
+                    {/* <div> */}
+                      {/* <p className='orders-tag'>Returns</p> */}
+                      {/* <p className='signin-tag'>Sign in</p> */}
+                    {/* </div> */}
+                    {/* <div> */}
+                      {/* <p className='orders-message'> */}
+                        {/* & Orders */}
+                      {/* </p> */}
+                    {/* </div> */}
+                  {/* </div> */}
+                {/* </span> */}
+
+                {/* <BiCartAlt id="cart-icon"/> */}
+                <div className='cart-div'>
+                  <p id='cart-count'>0</p>
+                <img className='cart-img' src='https://raw.githubusercontent.com/k-dodsonknapp/mmazon_clone/main/blue-cart-icon%3Dtake2.png'></img>
+                <p className='cart-label'>Cart</p>
+                </div>
+              </NavLink>
             </li>
           </div>
         </ul>
         <ul className='lower-nav'>
-          <li className='lower-nav-link'>
-            <NavLink to=''>
-              <GiHamburgerMenu/>
+          <li className='lower-nav-link' >
+            <NavLink to='' id='all-link'>
+              <div>
+              <BsList id='all-list-icon'/>
+              </div>
+              <p>
               All
+              </p>
             </NavLink>
           </li>
           <li className='lower-nav-link'>

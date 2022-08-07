@@ -1,0 +1,81 @@
+/**************V-Mini-Grid-V************************/
+
+.mini-grid-container {
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+    height: 325px;
+    width: 350px;
+    /* border: 1px solid red; */
+    /* margin-top: 275px; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 5px; 
+    background-color: #ffffff;
+}
+
+.mini-grid-item {
+    display: inline-grid;
+    justify-self: stretch;
+    align-self: stretch;
+    /* grid-row-start: 1;
+    grid-row-end: 1; */
+    /* margin: 0px 15px; */
+    /* margin-left: 15px; */
+    /* height: 120px; */
+    /* width: 160px; */
+    margin: 0px 20px;
+    /* border: 1px solid blue; */
+    background-color: #ffffff;
+}
+
+
+.mini-grid-item.one img,
+.mini-grid-item.two img,
+.mini-grid-item.three img,
+.mini-grid-item.four img {
+    height: 120px;
+    width: 100%;
+}
+
+.grid-item-btm-link {
+    padding: 10px 21px 15px 18px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.grid-item-btm-link a{
+    color: #007185;
+    text-decoration: none;
+}
+
+.grid-item-btm-link a:hover{
+    color: rgb(255, 102, 0);
+    text-decoration: underline;
+}
+
+.mini-grid-item.one a,
+.mini-grid-item.two a,
+.mini-grid-item.three a,
+.mini-grid-item.four a{
+    font-size: 11px;
+    font-weight: 100;
+    height: 100%;
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+}
+
+.mini-grid-item.one,
+.mini-grid-item.three {
+    margin-right: 0px;
+} 
+
+.mini-grid-item.two,
+.mini-grid-item.four  {
+    margin-left: 0px;
+} 
+
+.mini-grid-item-text {
+    margin-top: 3px;
+}

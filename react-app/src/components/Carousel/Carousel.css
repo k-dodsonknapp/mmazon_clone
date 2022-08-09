@@ -1,0 +1,134 @@
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1500px;
+    height: 246px;
+    /* border: 1px solid green; */
+}
+
+.right-btn {
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: flex-end;
+    height: 246px;
+    right: 0px;
+    position: absolute;
+    width: 100px;
+    /* border: 1px solid black; */
+    z-index: 100;
+}
+
+.left-btn {
+    display: flex;
+    flex-direction: flex-end;
+    height: 246px;
+    position: absolute;
+    width: 100px;
+    /* border: 1px solid black; */
+    z-index: 100;
+}
+
+.indicators {
+    background-color: transparent;
+    width: 100px;
+    border: none;
+}
+
+.indicators:hover {
+    cursor: pointer;
+}
+
+.carousel{
+    /* position: relative; */
+    /* top: 10px; */
+    overflow: hidden;
+    height: 550px;
+    /* z-index: 1; */
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 3s;
+    /* height: 450px; */
+    z-index: 1;
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* width:  1500Y; */
+    /* margin: 100px 0px 0px 0px; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* height: 550px; */
+    /* background-color: green; */
+    /* color: #fff; */
+}
+
+.carousel-img{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    /* background: linear-gradient(to top, transparent, transparent 50%, transparent 75%, #333 75%); */
+    /* image-resolution : linear-gradient(#e66465, transparent); */
+    background-image: linear-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(transparent));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 30%, transparent)
+}
+
+.right-icon,
+.left-icon {
+    height: 100%;
+    width: 50%;
+    color: white;
+}
+/*
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.carousel-project-title {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 85%;
+    z-index: 1;
+    text-decoration: none;
+    background-color: rgba(128, 128, 128, 0.103);
+    text-shadow:
+    0.04em 0 gray,
+    0 0.04em gray,
+    -0.04em 0 gray,
+    0 -0.04em gray,
+    -0.04em -0.04em gray,
+    -0.04em 0.04em gray,
+    0.04em -0.04em gray,
+    0.04em 0.04em gray;
+}
+
+.carousel-project-username {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 90%;
+    margin-top: 10px;
+    text-shadow:
+    0.04em 0 gray,
+    0 0.04em gray,
+    -0.04em 0 gray,
+    0 -0.04em gray,
+    -0.04em -0.04em gray,
+    -0.04em 0.04em gray,
+    0.04em -0.04em gray,
+    0.04em 0.04em gray;
+}
+.name{
+    position: relative;
+}
+*/

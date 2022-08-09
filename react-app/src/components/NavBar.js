@@ -96,37 +96,37 @@ const NavBar = () => {
             <li className='list-item' id='upper-right-nav-cart'>
               <NavLink id='cart-navlink' to='' exact={true} activeClassName='active'>
                 {/* <span className='orders-span'> */}
-                  {/* <div className='orders-message'> */}
-                    {/* <div> */}
-                      {/* <p className='orders-tag'>Returns</p> */}
-                      {/* <p className='signin-tag'>Sign in</p> */}
-                    {/* </div> */}
-                    {/* <div> */}
-                      {/* <p className='orders-message'> */}
-                        {/* & Orders */}
-                      {/* </p> */}
-                    {/* </div> */}
-                  {/* </div> */}
+                {/* <div className='orders-message'> */}
+                {/* <div> */}
+                {/* <p className='orders-tag'>Returns</p> */}
+                {/* <p className='signin-tag'>Sign in</p> */}
+                {/* </div> */}
+                {/* <div> */}
+                {/* <p className='orders-message'> */}
+                {/* & Orders */}
+                {/* </p> */}
+                {/* </div> */}
+                {/* </div> */}
                 {/* </span> */}
 
                 {/* <BiCartAlt id="cart-icon"/> */}
                 <div className='cart-div'>
                   <p id='cart-count'>0</p>
-                <img className='cart-img' src='https://raw.githubusercontent.com/k-dodsonknapp/mmazon_clone/main/blue-cart-icon%3Dtake2.png'></img>
-                <p className='cart-label'>Cart</p>
+                  <img className='cart-img' src='https://raw.githubusercontent.com/k-dodsonknapp/mmazon_clone/main/blue-cart-icon%3Dtake2.png'></img>
+                  <p className='cart-label'>Cart</p>
                 </div>
               </NavLink>
             </li>
           </div>
         </ul>
         <ul className='lower-nav'>
-          <li className='lower-nav-link' >
+          <li className='lower-nav-link' id='all-btn' >
             <NavLink to='' id='all-link'>
               <div>
-              <BsList id='all-list-icon'/>
+                <BsList id='all-list-icon' />
               </div>
               <p>
-              All
+                All
               </p>
             </NavLink>
           </li>

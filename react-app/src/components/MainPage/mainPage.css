@@ -1,11 +1,29 @@
 
 #main-page {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 100%;
     background-color: #eaeded;
     height: 100%;
 }
+
+/*V-Carousel-Container-V*/
+
+.carousel-container {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    /* border: 1px solid red; */
+    top: 100px;
+    height: 525px;
+    width: 1500px;
+    /* background: linear-gradient(#e66465, #e664642c); */
+
+}
+
+/*V-Main-Page-Grid-V*/
 
 .grid-container {
     display: grid;
@@ -14,12 +32,14 @@
     height: auto;
     /* width: 76.5%; */
     /* border: 1px solid red; */
-    margin-top: 275px;
+    margin-top: 250px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 18px;
-    row-gap: 18px; 
-    background-color: #eaeded;
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-rows: 425px 425px 300px 300px 425px 300px 300px 300px;
+    column-gap: 20px;
+    row-gap: 20px; 
+    background-color: transparent;
+    z-index: 1;
 }
 
 .grid-item {
@@ -32,6 +52,8 @@
     max-height: 450px;
     /* border: 1px solid blue; */
     background-color: #ffffff;
+    z-index: 200;
+
 }
 
 .grid-item-headline {
@@ -47,14 +69,45 @@
     padding: 24px 21px 10px 16px;
 }
 
-.grid-item-big {
+.grid-item-big-one {
     /* display: inline-grid; */
+
     /* grid-row-start: 1;
     grid-row-end: 1; */
     /* margin: 0px 15px; */
+    /* margin: -100px 0px; */
+    /* column-gap: 18px; */
     grid-column: 1 / 5;
     grid-row: 3;
     height: 300px;
     /* border: 1px solid blue; */
+    background-color: #ffffff;
+}
+
+.grid-item-big-two {
+    grid-column: 1 / 5;
+    grid-row: 4;
+    height: 300px;
+    background-color: #ffffff;
+}
+
+.grid-item-big-three {
+    grid-column: 1 / 5;
+    grid-row: 6;
+    height: 300px;
+    background-color: #ffffff;
+}
+
+.grid-item-big-four {
+    grid-column: 1 / 5;
+    grid-row: 7;
+    height: 300px;
+    background-color: #ffffff;
+}
+
+.grid-item-big-five {
+    grid-column: 1 / 5;
+    grid-row: 8;
+    height: 300px;
     background-color: #ffffff;
 }

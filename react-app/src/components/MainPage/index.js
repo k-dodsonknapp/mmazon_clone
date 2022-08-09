@@ -1,13 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import FullCard from '../FullCard';
+import Carousel, { CarouselItem } from '../Carousel';
 import MiniGrid from '../MiniGrid';
 import './mainPage.css'
 
 function MainPage() {
 
-    const miniGridTwoHeading = "Most-loved picks"
-    const miniGridOneHeading = "Everything for college"
+    const miniGridOneHeading = "Most-loved picks"
+    const miniGridTwoHeading = "Everything for college"
     const miniGridThreeHeading = "Back to School"
     const miniGridFourHeading = "Supplies for all grades"
 
@@ -83,8 +84,29 @@ function MainPage() {
     const fullCardLinkTextTwo = "See deals on 4+ star favorites"
     const fullCardLinkTextThree = "See the full edit from Shopbop"
 
+    // https://m.media-amazon.com/images/I/61-6qee3UsL._SX3000_.jpg
+
+
     return (
         <div id='main-page'>
+            <div className='carousel-container'>
+                <Carousel>
+                    <CarouselItem>
+                        <img className='carousel-img' src='https://m.media-amazon.com/images/I/61hfEh41A1L._SX3000_.jpg'></img>
+                        {/* <h1>HELLO</h1> */}
+                    </CarouselItem>
+                    <CarouselItem>
+                        <img className='carousel-img' src='https://m.media-amazon.com/images/I/618dV-kSTzL._SX3000_.jpg'></img>
+                        {/* <h1>HELLO</h1> */}
+
+                    </CarouselItem>
+                    <CarouselItem>
+                        <img className='carousel-img' src='https://m.media-amazon.com/images/I/41y6EesAT3L._SX1500_.jpg'></img>
+                        {/* <h1>HELLO</h1> */}
+
+                    </CarouselItem>
+                </Carousel>
+            </div>
 
             <div className='grid-container'>
                 <div className='grid-item'>
@@ -104,27 +126,31 @@ function MainPage() {
                     />
                 </div>
                 <div className='grid-item'>
-                    <FullCard 
-                    heading={fullCardHeadingOne}
-                    link={fullCardLinkTextOne}
-                    image={fullCardImageOne}
+                    <FullCard
+                        heading={fullCardHeadingOne}
+                        link={fullCardLinkTextOne}
+                        image={fullCardImageOne}
                     />
                 </div>
                 <div className='grid-item'>
-
-                </div>
-                <div className='grid-item'>
-                <FullCard 
-                    heading={fullCardHeadingTwo}
-                    link={fullCardLinkTextTwo}
-                    image={fullCardImageTwo}
+                    <FullCard
+                        heading={fullCardHeadingTwo}
+                        link={fullCardLinkTextTwo}
+                        image={fullCardImageTwo}
                     />
                 </div>
                 <div className='grid-item'>
-                <FullCard 
-                    heading={fullCardHeadingThree}
-                    link={fullCardLinkTextThree}
-                    image={fullCardImageThree}
+                    <FullCard
+                        heading={fullCardHeadingTwo}
+                        link={fullCardLinkTextTwo}
+                        image={fullCardImageTwo}
+                    />
+                </div>
+                <div className='grid-item'>
+                    <FullCard
+                        heading={fullCardHeadingThree}
+                        link={fullCardLinkTextThree}
+                        image={fullCardImageThree}
                     />
                 </div>
                 <div className='grid-item'>
@@ -143,7 +169,52 @@ function MainPage() {
                         link={linkTextFour}
                     />
                 </div>
-                <div className='grid-item-big'></div>
+                <div className='grid-item-big-one'>
+
+                </div>
+                <div className='grid-item-big-two'>
+
+                </div>
+                <div className='grid-item'>
+                    <MiniGrid
+                        heading={miniGridFourHeading}
+                        panelImages={miniGridFourImages}
+                        panelText={panelTextFour}
+                        link={linkTextFour}
+                    />
+                </div>
+                <div className='grid-item'>
+                    <MiniGrid
+                        heading={miniGridOneHeading}
+                        panelImages={miniGridOneImages}
+                        panelText={panelTextOne}
+                        link={linkTextOne}
+                    />
+                </div>
+                <div className='grid-item'>
+                    <MiniGrid
+                        heading={miniGridThreeHeading}
+                        panelImages={miniGridThreeImages}
+                        panelText={panelTextThree}
+                        link={linkTextThree}
+                    />
+                </div>
+                <div className='grid-item'>
+                    <FullCard
+                        heading={fullCardHeadingTwo}
+                        link={fullCardLinkTextTwo}
+                        image={fullCardImageTwo}
+                    />
+                </div>
+                <div className='grid-item-big-three'>
+
+                </div>
+                <div className='grid-item-big-four'>
+
+</div>
+<div className='grid-item-big-five'>
+
+</div>
             </div>
 
         </div>

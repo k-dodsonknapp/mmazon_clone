@@ -30,13 +30,24 @@
     background-color: #ffffff;
 }
 
+.mini-grid-item.one,
+.mini-grid-item.two,
+.mini-grid-item.three,
+.mini-grid-item.four {
+    overflow: hidden;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
 .mini-grid-item.one img,
 .mini-grid-item.two img,
 .mini-grid-item.three img,
 .mini-grid-item.four img {
     height: 120px;
-    width: 100%;
+    width: 130;
+    transform: scaleX(1.0);
 }
 
 .grid-item-btm-link {
@@ -78,4 +89,5 @@
 
 .mini-grid-item-text {
     margin-top: 3px;
+    padding-left: 23px;
 }

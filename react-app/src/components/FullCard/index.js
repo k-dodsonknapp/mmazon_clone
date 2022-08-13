@@ -8,7 +8,7 @@ function FullCard({ heading, link, image }) {
             <h2 id='full-card-h2'>{heading}</h2>
             <div className='full-card-img-div'>
                 <NavLink to='' className='full-card-link'>
-                    <img src={image}></img>
+                    <img src={image} alt="full card image"></img>
                 </NavLink>
             </div>
             <div className='full-card-btm-link'>

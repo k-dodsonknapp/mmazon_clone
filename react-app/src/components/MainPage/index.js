@@ -4,6 +4,8 @@ import FullCard from '../FullCard';
 import Carousel, { CarouselItem } from '../Carousel';
 import MiniGrid from '../MiniGrid';
 import './mainPage.css'
+import LargeCardCarousel from '../LargeCardCarousel';
+import LargeCarouselItem from '../LargeCardCarousel'
 
 function MainPage() {
 
@@ -170,7 +172,22 @@ function MainPage() {
                     />
                 </div>
                 <div className='grid-item-big-one'>
-
+                    <LargeCardCarousel>
+                        <LargeCarouselItem>
+                            <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img>
+                            <img src='https://m.media-amazon.com/images/I/411y5UdVmvL._AC_SY200_.jpg'></img>
+                            {/* <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img> */}
+                            {/* <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img> */}
+                        </LargeCarouselItem>
+                        <LargeCarouselItem>
+                            <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img>
+                            <img src='https://m.media-amazon.com/images/I/411y5UdVmvL._AC_SY200_.jpg'></img>
+                        </LargeCarouselItem>
+                        {/* <LargeCarouselItem>
+                        </LargeCarouselItem>
+                        <LargeCarouselItem>
+                        </LargeCarouselItem> */}
+                    </LargeCardCarousel>
                 </div>
                 <div className='grid-item-big-two'>
 
@@ -211,10 +228,10 @@ function MainPage() {
                 </div>
                 <div className='grid-item-big-four'>
 
-</div>
-<div className='grid-item-big-five'>
+                </div>
+                <div className='grid-item-big-five'>
 
-</div>
+                </div>
             </div>
 
         </div>

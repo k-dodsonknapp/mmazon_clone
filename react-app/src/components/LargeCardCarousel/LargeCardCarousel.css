@@ -1,0 +1,51 @@
+.large-card-carousel{
+    /* position: relative; */
+    /* top: 10px; */
+    overflow: hidden;
+    height: 550px;
+    /* z-index: 1; */
+}
+
+.large-inner {
+    white-space: nowrap;
+    transition: transform 3s;
+    /* height: 450px; */
+    z-index: 1;
+}
+
+.large-carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* width:  1500Y; */
+    /* margin: 100px 0px 0px 0px; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* height: 550px; */
+    /* background-color: green; */
+    /* color: #fff; */
+}
+
+.large-right-btn {
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: flex-end;
+    height: 246px;
+    right: 0px;
+    position: absolute;
+    /* color: black; */
+    width: 100px;
+    /* border: 1px solid black; */
+    z-index: 100;
+}
+
+.large-left-btn {
+    display: flex;
+    flex-direction: flex-end;
+    height: 246px;
+    position: absolute;
+    width: 100px;
+    /* color: black; */
+    /* border: 1px solid black; */
+    z-index: 100;
+}

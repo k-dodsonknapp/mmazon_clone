@@ -178,8 +178,8 @@ function MainPage() {
                             <img src='https://m.media-amazon.com/images/I/411y5UdVmvL._AC_SY200_.jpg'></img>
                             {/* <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img> */}
                             {/* <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img> */}
-                        </LargeCarouselItem>
-                        <LargeCarouselItem>
+                        {/* </LargeCarouselItem>
+                        <LargeCarouselItem> */}
                             <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img>
                             <img src='https://m.media-amazon.com/images/I/411y5UdVmvL._AC_SY200_.jpg'></img>
                         </LargeCarouselItem>

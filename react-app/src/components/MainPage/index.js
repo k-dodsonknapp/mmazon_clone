@@ -172,22 +172,23 @@ function MainPage() {
                     />
                 </div>
                 <div className='grid-item-big-one'>
-                    <LargeCardCarousel>
-                        <LargeCarouselItem>
-                            <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img>
-                            <img src='https://m.media-amazon.com/images/I/411y5UdVmvL._AC_SY200_.jpg'></img>
-                            {/* <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img> */}
-                            {/* <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img> */}
-                        {/* </LargeCarouselItem>
-                        <LargeCarouselItem> */}
-                            <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img>
-                            <img src='https://m.media-amazon.com/images/I/411y5UdVmvL._AC_SY200_.jpg'></img>
-                        </LargeCarouselItem>
-                        {/* <LargeCarouselItem>
-                        </LargeCarouselItem>
-                        <LargeCarouselItem>
-                        </LargeCarouselItem> */}
-                    </LargeCardCarousel>
+                    {/* <div className='large-carousel-container'> */}
+
+                        {/* <LargeCardCarousel> */}
+                            {/* <LargeCarouselItem>
+                                <h1>HELLO</h1>
+                            </LargeCarouselItem> */}
+                            {/* <LargeCarouselItem>
+                                <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img>
+                            </LargeCarouselItem>
+                            <LargeCarouselItem>
+                                <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img>
+                            </LargeCarouselItem> */}
+                            {/* <LargeCarouselItem>
+                                <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img>
+                            </LargeCarouselItem> */}
+                        {/* </LargeCardCarousel> */}
+                    {/* </div> */}
                 </div>
                 <div className='grid-item-big-two'>
 

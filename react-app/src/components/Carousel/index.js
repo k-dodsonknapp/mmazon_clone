@@ -52,7 +52,6 @@ function Carousel({ children }) {
                     <button className='indicators' onClick={() => updateIndex(activeIndex + 1)}>
                         <AiOutlineRight className='right-icon' />
                     </button>
-
                 </div>
             </div>
         </div>

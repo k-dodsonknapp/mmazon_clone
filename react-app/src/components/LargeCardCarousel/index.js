@@ -37,10 +37,10 @@ function LargeCardCarousel({ children }) {
 
     return (
         <div className='large-card-carousel'>
-            <div className='btn-container'>
+            <div className='large-btn-container'>
                 <div className='large-left-btn'>
-                    <button className='indicators' onClick={() => updateIndex(activeIndex - 1)}>
-                        <AiOutlineLeft className='left-icon' style={{color:"black"}}/>
+                    <button className='large-indicators' onClick={() => updateIndex(activeIndex - 1)}>
+                        <AiOutlineLeft className='large-left-icon'/>
                     </button>
                 </div>
                 <div className='large-inner' style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
@@ -49,10 +49,9 @@ function LargeCardCarousel({ children }) {
                     })}
                 </div>
                 <div className='large-right-btn'>
-                    <button className='indicators' onClick={() => updateIndex(activeIndex + 1)}>
-                        <AiOutlineRight className='right-icon' style={{color:"black"}}/>
+                    <button className='large-indicators' onClick={() => updateIndex(activeIndex + 1)}>
+                        <AiOutlineRight className='large-right-icon' />
                     </button>
-
                 </div>
             </div>
         </div>

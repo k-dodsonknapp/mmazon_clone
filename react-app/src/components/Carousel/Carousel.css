@@ -32,6 +32,7 @@
     background-color: transparent;
     width: 100px;
     border: none;
+    cursor: pointer;
 }
 
 .indicators:hover {

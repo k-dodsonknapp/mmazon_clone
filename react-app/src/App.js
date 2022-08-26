@@ -10,6 +10,7 @@ import User from './components/User';
 import { authenticate } from './store/session';
 import MainPage from './components/MainPage';
 import UpperFooter from './components/Footer';
+import LowerFooter from './components/LowerFooter';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -39,6 +40,7 @@ function App() {
           <NavBar />
           <MainPage />
           <UpperFooter/>
+          <LowerFooter/>
         </Route>
         <ProtectedRoute path='/users' exact={true} >
           <NavBar />

@@ -56,7 +56,7 @@ const NavBar = () => {
           </li>
           <div className='upper-nav-right'>
             <li className='list-item' id='upper-right-nav-sign-in'>
-              <NavLink to='' exact={true} activeClassName='active'>
+              <NavLink to='/login' exact={true} activeClassName='active'>
                 <span className='signin-span'>
 
                   <div className='signin-message'>

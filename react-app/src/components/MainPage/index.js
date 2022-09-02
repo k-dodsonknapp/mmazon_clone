@@ -6,6 +6,7 @@ import MiniGrid from '../MiniGrid';
 import './mainPage.css'
 import LargeCardCarousel from '../LargeCardCarousel';
 import LargeCarouselItem from '../LargeCardCarousel'
+import LargeCard from '../LargeCard';
 
 function MainPage() {
 
@@ -95,7 +96,6 @@ function MainPage() {
                 <Carousel>
                     <CarouselItem>
                         <img className='carousel-img' src='https://m.media-amazon.com/images/I/61hfEh41A1L._SX3000_.jpg'></img>
-                        {/* <h1>HELLO</h1> */}
                     </CarouselItem>
                     <CarouselItem>
                         <img className='carousel-img' src='https://m.media-amazon.com/images/I/618dV-kSTzL._SX3000_.jpg'></img>
@@ -109,7 +109,6 @@ function MainPage() {
                     </CarouselItem>
                 </Carousel>
             </div>
-
             <div className='grid-container'>
                 <div className='grid-item'>
                     <MiniGrid
@@ -171,25 +170,7 @@ function MainPage() {
                         link={linkTextFour}
                     />
                 </div>
-                <div className='grid-item-big-one'>
-                    {/* <div className='large-carousel-container'> */}
-
-                        {/* <LargeCardCarousel> */}
-                            {/* <LargeCarouselItem>
-                                <h1>HELLO</h1>
-                            </LargeCarouselItem> */}
-                            {/* <LargeCarouselItem>
-                                <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img>
-                            </LargeCarouselItem>
-                            <LargeCarouselItem>
-                                <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img>
-                            </LargeCarouselItem> */}
-                            {/* <LargeCarouselItem>
-                                <img src='https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_SY200_.jpg'></img>
-                            </LargeCarouselItem> */}
-                        {/* </LargeCardCarousel> */}
-                    {/* </div> */}
-                </div>
+                <LargeCard/>
                 <div className='grid-item-big-two'>
 
                 </div>

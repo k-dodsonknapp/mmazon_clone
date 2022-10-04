@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import LogoutButton from './auth/LogoutButton';
 import './navBar.css';
@@ -8,9 +8,12 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsList } from "react-icons/bs";
 import { BiCaretDown } from "react-icons/bi";
 import { BiCartAlt } from "react-icons/bi";
+import NavDropdown from './NavDropdown';
 // const mmazonLogo = require('../../public/mmazon-logo.png')
 
 const NavBar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <>
       <nav className='nav-container'>
@@ -55,27 +58,72 @@ const NavBar = () => {
             </NavLink> */}
           </li>
           <div className='upper-nav-right'>
-            <li className='list-item' id='upper-right-nav-sign-in'>
-              <NavLink to='/login' exact={true} activeClassName='active'>
-                <span className='signin-span'>
+            {/* <li className='list-item' id='upper-right-nav-sign-in'> */}
+            {/* <NavLink to='/login' exact={true} activeClassName='active'> */}
+            {/* <span className='signin-span'> */}
 
-                  <div className='signin-message'>
-                    <div>
-                      <p className='signin-tag'>Hello, Sign in</p>
-                      {/* <p className='signin-tag'>Sign in</p> */}
+            {/* <div className='signin-message'> */}
+            {/* <div> */}
+            {/* <p className='signin-tag'>Hello, Sign in</p> */}
+            {/* <p className='signin-tag'>Sign in</p> */}
+            {/* </div> */}
+            {/* <div> */}
+            {/* <p className='accounts-message'> */}
+            {/* Account & Lists */}
+            {/* <div id="signin-down-caret"> */}
+            {/* <BiCaretDown /> */}
+            {/* </div> */}
+            {/* </p> */}
+            {/* </div> */}
+            {/* </div> */}
+            {/* </span> */}
+            {/* </NavLink> */}
+            {/* </li> */}
+            <div id="hover-cover"
+              onMouseEnter={() => setShowMenu(true)}
+              onMouseLeave={() => setShowMenu(false)}
+            >
+              <NavDropdown />
+            </div>
+
+            {showMenu && (
+              <ul className='profile-options'
+                onMouseEnter={() => setShowMenu(true)}
+                onMouseLeave={() => setShowMenu(false)}
+              >
+                <div className='left-point'></div>
+                <div className='dropdown-div'>
+                  <NavLink to='/login' exact={true} id="something" activeClassName='another' style={{ textDecoration: 'none', color: "black" }}>
+                    <div className='dropdown-btns'>
+                      <li>
+                        Login
+                      </li>
                     </div>
-                    <div>
-                      <p className='accounts-message'>
-                        Account & Lists
-                        <div id="signin-down-caret">
-                          <BiCaretDown />
-                        </div>
-                      </p>
+                  </NavLink>
+                  <NavLink to='/sign-up' exact={true} activeClassName='active' style={{ textDecoration: 'none', color: "black" }}>
+                    <div className='dropdown-btns'>
+                      <li>
+                        Sign Up
+                      </li>
                     </div>
-                  </div>
-                </span>
-              </NavLink>
-            </li>
+                  </NavLink>
+                  {/* <NavLink to='/users' exact={true} activeClassName='active' style={{ textDecoration: 'none', color: "black" }}>
+              <div className='dropdown-btns'>
+                <li>
+                  Users
+                </li>
+              </div>
+            </NavLink> */}
+                  {/* {user && (
+              <div className='dropdown-btns'>
+                <li>
+                  <LogoutButton />
+                </li>
+              </div>
+            )} */}
+                </div>
+              </ul>
+            )}
             <li className='list-item' id='upper-right-nav-orders'>
               <NavLink to='' exact={true} activeClassName='active'>
                 <span className='orders-span'>

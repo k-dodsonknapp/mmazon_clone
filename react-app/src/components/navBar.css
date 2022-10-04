@@ -210,6 +210,16 @@
     color: #a7acb2;
 }
 
+
+/**************V-Dropdown Menu-V*********************/
+
+#hover-cover {
+    z-index: 100;
+}
+
+
+
+
 /**************V-Return/Orders/btn-V**************************/
 
 #upper-right-nav-orders {

@@ -1,0 +1,30 @@
+.profile-options {
+    background-color: #fff;
+    /* float: left; */
+    position: absolute;
+    z-index: 1000;
+    /* top: 100%; */
+    left: 69.7%;
+    top: 5.4%;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    height: 35%;
+    width: 25%;
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+}
+
+.left-point{
+	width: 0;
+    z-index: 1001;
+	height: 0;
+	border-left: 2vh solid transparent;
+	border-right: 1vh solid transparent;
+	border-top: 15vh solid var(#481b0b);
+	position: absolute;
+	top: 45%;
+	left: 69.7%;
+	transform: rotate(60deg);
+}

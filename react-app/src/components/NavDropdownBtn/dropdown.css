@@ -1,0 +1,139 @@
+.profile-options {
+    background-color: #fff;
+    /* float: left; */
+    position: absolute;
+    z-index: 1000 !important;
+    /* top: 100%; */
+    left: 71%;
+    top: 54px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 2px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    height: 450px;
+    width: 440px;
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+}
+
+.left-point{
+	width: 0;
+    /* z-index: 1001; */
+	height: 0;
+	border-left: 2vh solid transparent;
+	border-right: 1vh solid transparent;
+	border-top: 15vh solid var(#481b0b);
+	position: absolute;
+	top: 45%;
+	left: 69.7%;
+	transform: rotate(60deg);
+}
+
+.dropdown-div {
+    z-index: 1000;
+}
+
+.dd-signin-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    border-bottom: 1px solid rgba(180, 178, 178, 0.24);
+    width: 90%;
+}
+
+.dropdown-signin-btn {
+    display: flex;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    width: 38%;
+    height: 18px;
+    padding: 6px;
+    border: 1px solid #9c7e31;
+    background: linear-gradient(#faecc8, #f0c24d) !important;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-signin-btn:hover {
+    cursor: pointer;
+    background: #f0c24d !important;
+}
+
+.dd-signin-btn-wrapper p {
+    font-size: 10px;
+    margin-top: 7px;
+}
+
+.signup-link {
+    width: 100px;
+    margin-left: 2px;
+    color: #f0c24d !important;;
+}
+
+.signup-link a:hover {
+    text-decoration: underline !important;
+    width: 100px;
+    color: #f0964d !important;;
+}
+
+/************ main wrapper ***********/
+
+.dd-main-wrapper {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.dd-link {
+    text-decoration: none;
+    font-size: 11px;
+    color: rgba(68, 68, 68, 0.637);
+    margin: 5px 0px 3px 13px;
+}
+
+.dd-link:hover {
+    text-decoration: underline;
+    color: #f0964d;
+}
+
+/*************left column**************/
+
+.dd-left-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(180, 178, 178, 0.24);
+    width: 230px;
+    height: 345px;
+}
+
+.dd-left-wrapper h4 {
+    margin-left: 23px;
+}
+
+.dd-left-link {
+    text-decoration: none;
+    font-size: 11px;
+    color: rgba(68, 68, 68, 0.637);
+    margin: 5px 0px 3px 23px;
+}
+
+.dd-left-link:hover {
+    text-decoration: underline;
+    color: #f0964d;
+}
+
+/*************right column**************/
+
+.dd-right-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+}
+
+.dd-right-wrapper h4 {
+    margin-left: 13px;
+}

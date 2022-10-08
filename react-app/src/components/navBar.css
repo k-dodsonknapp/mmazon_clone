@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .nav-container {
     display: flex;
     justify-content: center;
@@ -215,6 +219,7 @@
 
 #hover-cover {
     z-index: 100;
+    /* cursor: pointer; */
 }
 
 

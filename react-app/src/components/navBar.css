@@ -372,7 +372,10 @@ a {
     flex-direction: row;
     font-weight: 600;
     padding: 0;
-
+    background-color: transparent;
+    border: none;
+    color: #ffffe0 !important;
+    cursor: pointer;
 }
 
 #all-list-icon {

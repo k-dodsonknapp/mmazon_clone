@@ -1,7 +1,13 @@
 /* TODO Add site wide styles */
 
 *{
+    
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+    overflow-x: hidden;
+    overflow-y: hidden;
 }

@@ -11,6 +11,7 @@ import { authenticate } from './store/session';
 import MainPage from './components/MainPage';
 import UpperFooter from './components/UpperFooter';
 import LowerFooter from './components/LowerFooter';
+import ProductDetails from './components/ProductDetails';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <NavBar />
       <Switch>
         <Route path='/login' exact={true}>
           <LoginForm />
@@ -37,10 +39,10 @@ function App() {
           <SignUpForm />
         </Route>
         <Route path='/' exact={true}>
-          <NavBar />
           <MainPage />
-          <UpperFooter/>
-          <LowerFooter/>
+        </Route>
+        <Route path='/productDetails' exact={true}>
+          <ProductDetails />
         </Route>
         <ProtectedRoute path='/users' exact={true} >
           <NavBar />
@@ -53,6 +55,8 @@ function App() {
         {/* <ProtectedRoute path='/' exact={true} >
         </ProtectedRoute> */}
       </Switch>
+      <UpperFooter />
+      <LowerFooter />
     </BrowserRouter>
   );
 }

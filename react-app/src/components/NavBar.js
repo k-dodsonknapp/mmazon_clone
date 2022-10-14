@@ -10,9 +10,28 @@ import { BiCaretDown } from "react-icons/bi";
 import { BiCartAlt } from "react-icons/bi";
 import NavDropdownBtn from './NavDropdownBtn';
 import DropdownMenu from './DropdownMenu';
+import AllModal from './AllModal';
 
 const NavBar = () => {
+  // const [showAllModal, setShowAllModal] = useState(false);
+  const [displayModal, setDisplayModal] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+
+  // const modalShow = () => {
+  //   if (showAllModal === false) setShowAllModal(true);
+  //   const root = document.querySelector("#root")
+  //   // if (root.style.overflow-y === "auto") {
+  //   //   root.style.overflow-y = "hidden"
+  //   // }
+  // };
+
+  // function to switch off the scroll of the main page 
+
+  const openModal = () => {
+    setDisplayModal(!displayModal)
+    document.body.style.overflowY = "hidden"
+    document.body.style.paddingRight = "16px"
+  }
 
   return (
     <>
@@ -86,7 +105,7 @@ const NavBar = () => {
                 //     </NavLink>
                 //   </div>
                 // </ul>
-                <DropdownMenu/>
+                <DropdownMenu />
               )}
             </div>
 
@@ -135,14 +154,18 @@ const NavBar = () => {
         </ul>
         <ul className='lower-nav'>
           <li className='lower-nav-link' id='all-btn' >
-            <NavLink to='' id='all-link'>
+            {/* <button id='all-link'className="Close" onClick={() => setDisplayModal(!displayModal)}> */}
+            <button id='all-link' className="Close" onClick={openModal}>
               <div>
                 <BsList id='all-list-icon' />
               </div>
               <p>
                 All
               </p>
-            </NavLink>
+            </button>
+            {/* {showAllModal && ( */}
+            <AllModal displayModal={displayModal} setDisplayModal={setDisplayModal} />
+            {/* )} */}
           </li>
           <li className='lower-nav-link'>
             <NavLink to=''>

@@ -1,0 +1,202 @@
+.main-modal-login-div {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    background-color: white;
+    position: fixed;
+    /* top: -403px; */
+    /* right: 551px; */
+    border-radius: 0px 2px 2px 0px;
+    /* padding-left: 100px; */
+    width: 400px;
+    height: 90vh;
+    /* transition: right 0.5s ease-in-out; */
+    transition: all 1s ease-out;
+}
+
+.Modal {
+    display: flex;
+    position: absolute;
+    bottom: 0vh;
+    background-color: transparent;
+    width: 425px;
+    height: 100%;
+    left: -150vw;
+    transition: left 0.6s ease-out;
+    z-index: 12;
+    overflow-x: hidden;
+}
+
+.modal-main {
+    width: 110%;
+    left: 200px;
+    height: 100%;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.Modal.Show {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    overflow-y: hidden;
+}
+
+.exit-modal-btn-div {
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+    width: 55px;
+}
+
+.exit-modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    width: 45px;
+    margin-top: 15px;
+    height: 35px;
+    font-weight: 100;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.modal-greeting {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 50px;
+    align-items: center;
+    width: 340px;
+    height: 50px;
+    background-color: rgb(35, 47, 62, 1);
+    color: white;
+    font-size: 23px;
+}
+
+
+.Overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: none;
+    z-index: 11;
+}
+
+.Overlay.Show {
+    display: block;
+}
+
+.message-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    /* margin-left: 50px; */
+}
+
+.modal-button-div {
+    display: flex;
+    margin-top: 40px;
+}
+
+.main-modal-login-div h1 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-modal-login-div h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    width: 120px;
+}
+
+#modal-login-btn {
+    color: black;
+    height: 60px;
+    width: 100px;
+    border-radius: 3px 0px 0px 3px;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#modal-signup-btn {
+    height: 60px;
+    width: 100px;
+    border-radius: 0px 3px 3px 0px;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    /* border-left: none; */
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#modal-signup-btn:hover,
+#modal-login-btn:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+/*********** modal menu ************/
+
+#menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu-list h3 {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    padding-top: 15px;
+    height: 40px;
+}
+
+.submenu-list button {
+    display: flex;
+    align-items: center;
+    padding-left: 37px;
+    height: 45px;
+    color: #535353;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.submenu-list button:hover {
+    /* border: 1px solid #535353; */
+    /* padding-left: 36px; */
+    background-color: rgba(210, 213, 216, 0.342);
+}
+
+.underline-submenu {
+    height: 5px;
+    border-bottom: 1px solid #d5dbdb;
+}
+
+.btm-submenu {
+    height: 50px;
+}
